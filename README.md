@@ -47,3 +47,9 @@ oc set probe deployment/nexus3 \
         --initial-delay-seconds 30 \
         -- echo ok
 ```
+
+* create Maven-Settings config-map
+
+```
+oc create cm maven-settings --from-file=settings.xml=maven-settings.xml
+```
